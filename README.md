@@ -5,7 +5,7 @@ A simple adapter to jquery's [PEP](https://github.com/jquery/PEP) for [FramerJS]
 Tested in [Framer Studio](http://framerjs.com) and [framer-cli](https://github.com/peteschaffner/framer-cli).
 
 1. Run `npm install framer-pep` in your prototype's directory (usually MyPrototype.framer/)
-2. Reference framer-pep by adding `pep = require("framer-pep")` to your app.coffee
+2. Add a reference framer-pep by adding `pep = require("framer-pep")`. Where you do this dependson whether you're using Framer Studio or framer-cli
 
 ## Framer Studio
 
