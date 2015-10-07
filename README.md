@@ -2,11 +2,42 @@ A simple adapter to jquery's [PEP](https://github.com/jquery/PEP) for [FramerJS]
 
 # Example Usage
 
-This has only been tested in [framer-cli](https://github.com/peteschaffner/framer-cli), but should work in Framer Studio, following [this example](http://framerjs.com/docs/#modules-npm-example).
+Tested in [Framer Studio](http://framerjs.com) and [framer-cli](https://github.com/peteschaffner/framer-cli).
 
-1. Run `npm install framer-pep` in your prototype's directory
+1. Run `npm install framer-pep` in your prototype's directory (usually MyPrototype.framer/)
 2. Reference framer-pep by adding `pep = require("framer-pep")` to your app.coffee
-3. The `pep` variable has two properties, `pep.PointerEvents` and `pep.PointerEventLayer`
+
+## Framer Studio
+
+If you're using Framer Studio, you need to create an `npm.coffee` file in your modules folder, per [these instructions](http://framerjs.com/docs/#modules-npm-example).
+
+`MyPrototype.framer/modules/npm.coffee`
+
+```coffeescript
+# npm.coffee is a simple module wrapper
+exports.pep = require("framer-pep")
+# You could require more npm modules that you have installed on additional lines. For example, assuming you have backbone installed:
+#exports.backbone = require("backbone")
+```
+
+`MyPrototype.framer/app.coffee`
+
+```coffeescript
+npm = require("npm") # reference to your npm wrapper module
+pep = npm.pep # now you have direct access to the framer-pep npm module
+```
+
+## framer-cli
+
+`index.coffee` (or index.js)
+
+```coffeescript
+pep = require("framer-pep")
+```
+
+# Features
+
+framer-pep exposes two properties, `pep.PointerEvents` and `pep.PointerEventLayer`
 
 Here's how I like to use it:
 
