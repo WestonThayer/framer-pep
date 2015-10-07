@@ -1,6 +1,6 @@
 {
   "name": "framer-pep",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Framer adapter for jquery's PEP (PointerEvents Polyfill)",
   "main": "index.js",
   "scripts": {
