@@ -1,0 +1,25 @@
+{
+  "name": "framer-pep",
+  "version": "0.1.0",
+  "description": "Framer adapter for jquery's PEP (PointerEvents Polyfill)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Weston Thayer <me@westonthayer.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WestonThayer/framer-pep"
+  },
+  "bugs": {
+    "url": "https://github.com/WestonThayer/framer-pep/issues"
+  },
+  "keywords": [
+    "framerjs",
+    "framer",
+    "pep",
+    "pepjs",
+    "pointerevents"
+  ],
+  "license": "MIT"
+}
