@@ -15,12 +15,16 @@ var PepEvents = {
 
 exports.PointerEvents = PepEvents;
 
-class PepLayer extends Framer.Layer {
-    constructor(options={}) {
-        super(options);
+var PepLayer = (function(Layer) {
+    PepLayer.prototype = Object.create(Layer.prototype);
+    
+    function PepLayer(options) {
+        var options = options || {};
+        
+        Layer.call(this, options);
         
         this._element.setAttribute("touch-action", "none");
-        
+
         // needed to pass Framer's Utils.domValidEvent check
         this._element.onpointermove = null;
         this._element.onpointerdown = null;
@@ -31,6 +35,8 @@ class PepLayer extends Framer.Layer {
         this._element.onpointerleave = null;
         this._element.onpointercancel = null;
     }
-}
+    
+    return PepLayer;
+})(Framer.Layer);
 
 exports.PointerEventLayer = PepLayer;
