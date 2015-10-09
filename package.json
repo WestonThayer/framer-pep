@@ -4,7 +4,8 @@
   "description": "Framer adapter for jquery's PEP (PointerEvents Polyfill)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "coffee --compile index.coffee"
   },
   "author": "Weston Thayer <me@westonthayer.com>",
   "repository": {
@@ -21,5 +22,12 @@
     "pepjs",
     "pointerevents"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "^1.10.0"
+  },
+  "files": [
+    "index.js",
+    "pepjs.js"
+  ]
 }

@@ -65,3 +65,7 @@ window.Events.TouchStart = Events.PointerDown
 window.Events.TouchMove = Events.PointerMove
 window.Events.TouchEnd = Events.PointerUp
 ```
+
+# Building
+
+Just use `npm run build`. That will generate the compiled `index.js` from `index.coffee`.

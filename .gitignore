@@ -1,0 +1,5 @@
+# NPM ships with index.js, but it's a compiled file
+# so we don't need to track it
+index.js
+
+node_modules/
